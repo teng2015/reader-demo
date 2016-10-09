@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">
+    <!--/遇到一串数字时不会识别为电话号码-->
+    <title>Reader_Demo</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="nav-top-wrapper" class="hidden">
+            <div class="back-button">
+                <div class="back-button-icon"></div>
+                <span class="back-button-title">返回</span>
+            </div>
+        </div>
+        <!--顶部导航结束-->
+        <div id="fiction-content"></div>
+        <!--小说内容结束-->
+        <div id="change-page">
+            <ul id="buttons">
+                <li id="prev-button">上一章</li>
+                <li id="next-button">下一章</li>
+            </ul>
+        </div>
+        <div id="nav-bottom-wrapper" class="hidden">
+            <div class="nav-bottom-submenu hidden">
+                <div class="setting setting-font-size">
+                    <div>字号</div>
+                    <div class="fs-option increase-font">大</div>
+                    <div class="fs-option decrease-font">小</div>
+                </div>
+                <div class="setting setting-bg-color">
+                    <div>背景</div>
+                    <div class="bg-optiion option-1"></div>
+                    <div class="bg-optiion option-2"></div>
+                    <div class="bg-optiion option-3"></div>
+                    <div class="bg-optiion option-4"></div>
+                    <div class="bg-optiion option-5"></div>
+                </div>
+            </div>
+            <!--二级导航条结束-->
+            <div class="nav-bottom-menu">
+                <div class="bottom-menu-item">
+                    <div class="button-catalogue button">
+                        <div class="icon-catalogue button-icon"></div>
+                        <div class="text-catalogue button-text">目录</div>
+                    </div>
+                </div>
+                <div class="bottom-menu-item">
+                    <div class="button-font button">
+                        <div class="button-icon"></div>
+                        <div class="button-text">字体</div>
+                    </div>
+                </div>
+                <div class="bottom-menu-item">
+                    <div class="button-night button">
+                        <div class="button-icon"></div>
+                        <div class="button-text">夜间</div>
+                    </div>
+                    <div class="button-daytime button hidden">
+                        <div class="button-icon"></div>
+                        <div class="button-text">白天</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--底部主导航条结束-->
+        </div>
+        <!--底部导航-->
+        <div id="page-control">
+            <div id="control-mid"></div>
+        </div>
+        <!--透明层,用于控制页面如激活导航条-->
+    </div>
+    <script src="libs/zepto.js"></script>
+    <script>
+        window.jQuery = $;
+    </script>
+    <script src="libs/jquery.base64.js"></script>
+    <script src="libs/jquery.jsonp.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
