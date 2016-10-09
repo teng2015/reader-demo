@@ -136,15 +136,6 @@ $(function () {
         };
         
         // 获取chapter.json
-        // var getFictionInfo = function (callback) {
-        //     $.get("./data/chapter.json", function (data) {
-        //         // todo 获得章节信息成功的回调
-        //         chapter_id = data.chapters[1].chapter_id;
-        //         chapterCount = data.chapters.length;
-        //         callback && callback();
-        //     }, "json")
-        // };
-        
         var getFictionData = function () {
             return new Promise(function (resolve, reject) {
                 chapter_id = parseInt(util.storageGetter(fic_id + "_last_chapter"), 10);
@@ -164,19 +155,8 @@ $(function () {
                 }
             });
         };
-        
+
         // 获取data+chapter_id.json
-        // var getChapterContent = function (chapter_id, callback) {
-        //     $.get("./data/data" + chapter_id + ".json", function (data) {
-        //         // result为0说明成功获取到json数据
-        //         if (data.result == 0) {
-        //             util.getJSONP(data.jsonp, function (json) {
-        //                 callback && callback(json);
-        //             });
-        //         }
-        //     }, "json")
-        // };
-        
         var getChapterWithID = function () {
             return new Promise(function (resolve, reject) {
                 $.get("./data/data" + chapter_id + ".json", function (data) {
