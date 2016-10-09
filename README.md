@@ -8,3 +8,11 @@
 - 调整文字大写
 - 切换夜间模式
 - 本地存储保存用户偏好设置
+
+## 功能演示
+![GIF](https://raw.githubusercontent.com/SZzzzz/reader-demo/master/images/features.gif)
+
+## TODO
+- 用react重构
+- 完善功能
+- 优化异步方式
